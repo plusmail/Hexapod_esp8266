@@ -168,23 +168,29 @@ void WebController::ButtonBlue(void)
     if ( g_InControlState.GaitType < 4 )g_InControlState.GaitType++;
     updateGait();
   }
+  
   if ( ControlMode == WALKMODE && WalkSubMode == DOUBLEHEIGHT )
   {
     g_InControlState.LegLiftHeight = 80;
   }
+  
   if ( ControlMode == WALKMODE && WalkSubMode == SPEEDSUBMODE )
   {
     g_InControlState.SpeedControl += 50;
     if ( g_InControlState.SpeedControl > 2000 ) g_InControlState.SpeedControl = 2000;
   }
+  
   if ( ControlMode == WALKMODE && WalkSubMode == TRAVELLENGTH )
   {
     DoubleTravelOn = true;
   }
+  
   if ( ControlMode == WALKMODE && WalkSubMode == BALANCESUBMODE )
   {
     g_InControlState.BalanceMode = 1;
-  }  if ( ControlMode == SINGLELEGMODE )
+  }  
+  
+  if ( ControlMode == SINGLELEGMODE )
   {
     if (g_InControlState.SelectedLeg == 255 )
       g_InControlState.SelectedLeg =0 ;

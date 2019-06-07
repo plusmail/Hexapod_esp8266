@@ -100,9 +100,9 @@
 //--------------------------------------------------------------------
 //[LEG DIMENSIONS]
 //Universal dimensions for each leg in mm
-#define cXXCoxaLength     45    // 29
-#define cXXFemurLength    38    // 57  => 38
-#define cXXTibiaLength    90    // 141 => 65-70 WAS 90
+#define cXXCoxaLength     30    // 29
+#define cXXFemurLength    50    // 57  => 38
+#define cXXTibiaLength    100    // 141 => 65-70 WAS 90
 
 
 #define cRRCoxaLength     cXXCoxaLength	    //Right Rear leg
@@ -151,6 +151,7 @@
 #define cLROffsetX      32     //Distance X from center of the body to the Left Rear coxa
 #define cLROffsetZ      54     //Distance Z from center of the body to the Left Rear coxa
 #define cLMOffsetX      68     //Distance X from center of the body to the Left Middle coxa
+
 #define cLMOffsetZ      0      //Distance Z from center of the body to the Left Middle coxa
 #define cLFOffsetX      32     //Distance X from center of the body to the Left Front coxa
 #define cLFOffsetZ      -54    //Distance Z from center of the body to the Left Front coxa

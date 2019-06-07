@@ -1,5 +1,5 @@
 //=============================================================================
-//Project HexAJpod - AJvdW
+//  
 //Date    15 Apr 2016 - v0.2
 //=============================================================================
 #include <Arduino.h>
@@ -138,7 +138,8 @@ void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t length
 }
 
 void setupWiFi()
-{ // setup Wifi
+{ 
+// setup Wifi
 //  ESP.eraseConfig();
 //  WiFi.setAutoConnect(false);
 //  WiFi.disconnect(true);
@@ -244,7 +245,8 @@ void SaveConfig()
 }
 
 boolean LoadConfig()
-{ // Load calibration config from EEPROM
+{ 
+  // Load calibration config from EEPROM
   if (EEPROM.read(288) == 'H' && EEPROM.read(289) == 'E' && EEPROM.read(290) == 'X'  && EEPROM.read(291) == 'C' )
   {
     for( int legnr=0; legnr< 6; legnr++ )
@@ -431,16 +433,16 @@ void setup()
     Serial.printf("Running loop ...\n");
 
 
-//  if (!nrf24.init())
-//    Serial.println("init failed");
-//   Defaults after init are 2.402 GHz (channel 2), 2Mbps, 0dBm
-//  if (!nrf24.setChannel(3))
-//    Serial.println("setChannel failed");
-//  if (!nrf24.setRF(RH_NRF24::DataRate2Mbps, RH_NRF24::TransmitPower0dBm))
-//    Serial.println("setRF failed");    
+  if (!nrf24.init())
+    Serial.println("init failed");
+  // Defaults after init are 2.402 GHz (channel 2), 2Mbps, 0dBm
+  if (!nrf24.setChannel(3))
+    Serial.println("setChannel failed");
+  if (!nrf24.setRF(RH_NRF24::DataRate2Mbps, RH_NRF24::TransmitPower0dBm))
+    Serial.println("setRF failed");    
 
-//  Scheduler.start(&nrf24_task);
-//  Scheduler.begin();
+  Scheduler.start(&nrf24_task);
+  Scheduler.begin();
 
 
  }
