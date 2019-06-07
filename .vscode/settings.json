@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.env.linux": {
+        "PATH": "/home/work/.platformio/penv/bin:/home/work/.platformio/penv:/home/work/.local/bin:/home/work/esp/xtensa-esp32-elf/bin:/home/work/.local/bin:/home/work/esp/xtensa-esp32-elf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/eclipse:/opt/ESPlorer:/opt/xtensa-lx106-elf/bin:/snap/bin:/home/work:/home/test:/home/work:/home/test",
+        "PLATFORMIO_CALLER": "vscode"
+    }
+}
